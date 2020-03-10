@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exámen</title>
+	<meta http-equiv="content-type" content="text/css/javascript/php; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="javascript/crucigrama.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="css/crucigrama.css">
+</head>
+<h1>Exámen de medio curso</h1>
+<h2>Gustavo Adolfo Sánchez Torres <br> 1796047</h2>
+<center>
+<script type="text/javascript">
+
+	$(document).ready(function(event) {
+		var puzzlewords = [
+				// word, clue
+			['Antártida', '¿Cuál es el lugar más frío de la tierra?'],
+			['Amazonas', '¿Cuál es el río más largo del mundo?'],
+			['Isabel', '¿Cómo se llama la Reina del Reino Unido?'],
+			['América', '¿En qué continente está Ecuador?'],
+			['Grecia', '¿Dónde originaron los juegos olímpicos?'],
+			['Mamífero ', '¿Qué tipo de animal es la ballena?'],
+			['Ética', 'Disciplina filosófica que estudia el bien y el mal y sus relaciones con la moral y el comportamiento humano'],
+			['Platón', '¿Quién “sabía que no sabía nada”?'],
+			['Italia', '¿En qué país se encuentra la torre de Pisa?'],
+			['Producto', '¿Cómo se denomina el resultado de la multiplicación?'],
+			['Pacífico', '¿Cuál es el océano más grande?'],
+			['Café', '¿Qué producto cultiva más Guatemala?'],
+			['Oviparo', 'Es un un animal que nace de un huevo.'],
+			['Rusia', '¿Cuál es el país más grande del mundo?'],
+			['China', '¿Cual es país más poblado de la Tierra?'],
+			['NuevaYork', '¿Cuál es la ciudad de los rascacielos?'],
+			['Pinocho', '¿A quién le crecía la nariz cuando mentía?'],
+		];
+		crosswordPuzzle(puzzlewords);
+	});
+
+</script>
+</center>
+<body>
+
+<div id="root" class="root">
+</div>
+
+<div id="lists" class="lists">
+
+	<table>
+	
+		<tr>
+			<td width="50%" id="left-list" valign="top" class="list-text">
+				<center>
+				<h3>Vertical</h3>
+				</center>
+			</td>
+			<td width="50%" id="right-list" valign="top" class="list-text">
+				<center>
+				<h3>Horizontal</h3>
+				</center>
+			</td>
+		</tr>
+
+	</table>
+
+</div>
+
+<div id="answer-form">
+
+	<div class="short-margin">
+		
+		<p id="position-and-clue"></p>
+		
+		<p>Answer : <input id="solution-answer" type="text" size="40"></p>
+		
+		<p id="answer-results" class="hidden"></p>
+		
+		<p><input type="button" id="cancel-button" value="Cancelar"> <input type="button" id="answer-button" value="Respuesta"> <input type="button" id="reveal-answer-button" value="Mostrar respuesta"></p>
+	</div>
+</div>
+</body>
+</html>
